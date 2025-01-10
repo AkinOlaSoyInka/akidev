@@ -23,31 +23,29 @@ const ContactForm = () => {
         )
         .then(
           (result) => {
-            setStateMessage('Message sent!');
+            setStateMessage('Email sent!');
             setIsSubmitting(false);
             setTimeout(() => {
               setStateMessage(null);
-            }, 5000); // hide message after 5 seconds
+            }, 5000); 
           },
           (error) => {
             setStateMessage('Something went wrong, please try again later');
             setIsSubmitting(false);
             setTimeout(() => {
               setStateMessage(null);
-            }, 5000); // hide message after 5 seconds
+            }, 5000); 
           }
         );
-      
-      // Clears the form after sending the email
       e.target.reset();
     };
     return (
         <div className='formContainer'>
-        <h3>Send me a message!</h3>
+        <h3 aria-label='Contact Form'>Send me a message!</h3>
         <p></p>
         <form onSubmit={sendEmail}>
           <label>Name</label>
-          <input type="text" name="user_name" />
+          <input type="text" name="user_name" id='form_name'/>
           <label>Email</label>
           <input type="email" name="user_email" />
           <label>Message</label>
