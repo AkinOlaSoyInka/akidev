@@ -71,6 +71,21 @@ h1 {
   h1 {
     font-size:4rem;
   }
+  .toolbarContainer{
+    flex-direction: column;
+  }
+  .toolbarElement{
+    width: 100%;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    border-bottom: 2px solid #61dafb;
+  }
+
+  .toolbarElement:hover{
+    border-bottom: 2px solid #09223b;
+  }
 }
 
 h3{
