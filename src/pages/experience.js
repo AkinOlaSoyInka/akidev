@@ -30,7 +30,7 @@ export default function Experience(){
             'Created UI components using SASS and integrated API endpoints for video streaming analytics and login journeys',
             'Wrote automated tests for React components using Jest. Also created automated tests for iOS applications using Swift',
             'Joined team in Government sector, working on a portal to help local councils and contractors coordinate on contracts for construction projects',
-            'Developed variou forms and UI components using React'
+            'Developed various forms and UI components using React'
         ]
     },
     {
